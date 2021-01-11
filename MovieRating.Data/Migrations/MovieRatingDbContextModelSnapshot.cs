@@ -18,7 +18,7 @@ namespace MovieRating.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.1");
 
-            modelBuilder.Entity("MovieRating.Core.MovieRatingModel", b =>
+            modelBuilder.Entity("MovieRating.Data.Models.MovieRatingModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

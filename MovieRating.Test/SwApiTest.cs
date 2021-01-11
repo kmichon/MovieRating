@@ -26,20 +26,20 @@ namespace MovieRating.Test
                 BirthYear = "19BBY",
                 Gender = "male",
                 Homeworld = "http://swapi.dev/api/planets/1/",
-                Films = new List<string>() //nie działa
+                Films = new List<string>()
                 {
                     "http://swapi.dev/api/films/1/",
                     "http://swapi.dev/api/films/2/",
                     "http://swapi.dev/api/films/3/",
                     "http://swapi.dev/api/films/6/"
                 },
-                Species = new List<object>(), // nie działa
-                Vehicles = new List<string>() // nie działa
+                Species = new List<object>(),
+                Vehicles = new List<string>()
                 {
                     "http://swapi.dev/api/vehicles/14/",
                     "http://swapi.dev/api/vehicles/30/"
                 },
-                Starships = new List<string>() // nie działa
+                Starships = new List<string>()
                 {
                     "http://swapi.dev/api/starships/12/",
                     "http://swapi.dev/api/starships/22/"
@@ -53,6 +53,7 @@ namespace MovieRating.Test
             var result = await swApiConector.GetCharacterDetails(1);
 
             //Assert
+            // TODO: Improve comparing objects with collections
             CollectionAssert.AreEquivalent(mockupCharacter.Films, result.Films);
             Assert.AreEqual(mockupCharacter.Name, result.Name);
         }

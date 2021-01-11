@@ -21,7 +21,8 @@ namespace MovieRating.Connectors.SwApi
 
             var httpResponse = await httpClient.GetAsync($"{baseUrl}films/");
 
-            //TODO: Extract to external private validation method
+            //TODO: Processing HTTP Response may be extracted to external private generic method, 
+            // where exception should be thrown when HTTP Status Code != 200
             if (httpResponse.StatusCode != HttpStatusCode.OK)
             {
                 throw new Exception("Error while connecting to SwApi.");

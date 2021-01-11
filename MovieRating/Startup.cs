@@ -28,7 +28,9 @@ namespace MovieRating
                 options.UseSqlServer(Configuration.GetConnectionString("MovieRatingDb"));
             });
 
+            //TODO: To think about singleton lifetime scope registration
             services.AddScoped<ISqlMovieRating, SqlMovieRating>();
+
             services.AddScoped<ISwApiConnector, SwApiConnector>();
 
             services.AddRazorPages();

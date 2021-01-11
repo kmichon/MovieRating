@@ -11,7 +11,7 @@ namespace MovieRating.Data.Models
         [Required]
         public int MovieId { get; set; }
         
-        [Required, Range(1,5)]
+        [Required, Range(0,10)]
         public int Rating { get; set; }
     }
 }
