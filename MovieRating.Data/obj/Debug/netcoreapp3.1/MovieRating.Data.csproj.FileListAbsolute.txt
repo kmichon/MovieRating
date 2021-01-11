@@ -1,0 +1,12 @@
+C:\Projects\MovieRating\MovieRating.Data\bin\Debug\netcoreapp3.1\MovieRating.Data.deps.json
+C:\Projects\MovieRating\MovieRating.Data\bin\Debug\netcoreapp3.1\MovieRating.Data.runtimeconfig.json
+C:\Projects\MovieRating\MovieRating.Data\bin\Debug\netcoreapp3.1\MovieRating.Data.runtimeconfig.dev.json
+C:\Projects\MovieRating\MovieRating.Data\bin\Debug\netcoreapp3.1\MovieRating.Data.dll
+C:\Projects\MovieRating\MovieRating.Data\bin\Debug\netcoreapp3.1\MovieRating.Data.pdb
+C:\Projects\MovieRating\MovieRating.Data\obj\Debug\netcoreapp3.1\MovieRating.Data.AssemblyInfoInputs.cache
+C:\Projects\MovieRating\MovieRating.Data\obj\Debug\netcoreapp3.1\MovieRating.Data.AssemblyInfo.cs
+C:\Projects\MovieRating\MovieRating.Data\obj\Debug\netcoreapp3.1\MovieRating.Data.csproj.CoreCompileInputs.cache
+C:\Projects\MovieRating\MovieRating.Data\obj\Debug\netcoreapp3.1\MovieRating.Data.dll
+C:\Projects\MovieRating\MovieRating.Data\obj\Debug\netcoreapp3.1\MovieRating.Data.pdb
+C:\Projects\MovieRating\MovieRating.Data\obj\Debug\netcoreapp3.1\MovieRating.Data.genruntimeconfig.cache
+C:\Projects\MovieRating\MovieRating.Data\obj\Debug\netcoreapp3.1\MovieRating.Data.csprojAssemblyReference.cache

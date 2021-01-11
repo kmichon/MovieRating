@@ -1,0 +1,30 @@
+﻿@page
+@model MovieRating.Pages.Movies.ListModel
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<h1>Movies</h1>
+
+<table class="table">
+    @foreach (var movie in Model.Movies)
+    {
+        <tr>
+            <td>@movie.Title</td>
+            <td>@movie.MovieRating</td>
+            <td>
+                <a class="btn btn-lg"
+                   asp-page="./Detail"
+                   asp-route-movieId="@movie.MovieId">
+                    <i class="glyphicon glyphicon-zoom-in"></i>
+                </a>
+            </td>
+            <td><a asp-page="./Rate" class="btn btn-primary" asp-route-movieId="@movie.MovieId">Rate</a></td>
+
+        </tr>
+    }
+</table>

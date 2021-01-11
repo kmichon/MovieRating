@@ -1,0 +1,21 @@
+﻿@page "{movieId:int}"
+@model MovieRating.Pages.Movies.RateModel
+@{
+    ViewData["Title"] = "Rate";
+}
+
+<h2>Rate @Model.Movie.Title</h2>
+
+<form method="post">
+
+    @*<input type="hidden" asp-for="NewMovieRating.Rating" />*@
+    <div class="form-group">
+        <label asp-for="NewMovieRating.Rating"></label>
+        <input asp-for="NewMovieRating.Rating" class="form-control" />
+        <span class="text-danger" asp-validation-for="NewMovieRating.Rating"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+

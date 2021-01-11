@@ -1,0 +1,38 @@
+﻿@page "{movieId:int}"
+@model MovieRating.Pages.Movies.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>@Model.Movie.Title Details</h2>
+
+<table class="table">
+    <tr>
+        <td>Episode Id</td>
+        <td>Opening crawl</td>
+        <td>Director</td>
+        <td>Producer</td>
+        <td>Release_date</td>
+        <td>Characters</td>
+        <td>Created</td>
+        <td>Edited</td>
+    </tr>
+    <tr>
+        <td>@Model.Movie.EpisodeId</td>
+        <td>@Model.Movie.OpeningCrawl</td>
+        <td>@Model.Movie.Director</td>
+        <td>@Model.Movie.Producer</td>
+        <td>@Model.Movie.ReleaseDate</td>
+        <td>
+            @foreach (var name in @Model.Movie.Characters)
+            {
+                <li>@name </li>
+            }
+        </td>
+        <td>@Model.Movie.Created</td>
+        <td>@Model.Movie.Edited</td>
+    </tr>
+
+</table>
+
+<a asp-page="./List" class="btn btn-default">Back to movies list</a>
